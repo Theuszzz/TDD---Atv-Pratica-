@@ -5,7 +5,7 @@ Exercício 1:
         O primeiro teste trata-se de importar a funçao "calcular_desconto" do arquivo "calculadora.py". Criando uma classe onde os testes serao definidos como "desconto porcento" .
         
 • Por que ele falhou?
-        Falha caso a funçao importada do arquivo nao ter sido implementada ainda, ou seja, nao tem conteudo ou o arquivo nao existe .
+        Falha caso a funçao importada do arquivo nao ter sido implementada ainda, ou seja, nao tem conteúdo ou o arquivo nao existe .
         
 • Como você fez o teste passar?
         Definir na funçao o minimo para passar o teste que e retornar o valor do desconto aplicado ao valor final de um produto, parametros de entrada da funçao implementada.
@@ -30,8 +30,15 @@ Exercício 3:
         Calcular total , que calcula um subtotal depois aplica o valor do desconto .
         
 • Quais testes foram criados?
+        Testes que verificao cada funcionalidade , no teste "teste_desconto_percentual" todas as funcionalidades sao usadas para o retorno do total fazendo o objetivo final do teste por completo.
+        
 • Qual foi a principal dificuldade encontrada durante o desenvolvimento?
+        Pensar qual seria uma refatoraçao relevante para o codigo .
 Reflexão final:
 • Explique, com suas próprias palavras, o que significa RED → GREEN → REFACTOR.
-• Qual é a principal diferença entre desenvolver primeiro o código e depois criar os testes
-e utilizar TDD?
+        RED - Ira indicar que o teste esta com alguma coisa que nao foi gunfigurada corretamente ou esta falatando.
+        GREEN - O minimo exigido para a conclusao do reste foi realizado com exito.
+        REFACTOR - Etapa onde o desenvolvedor busca por incrementos, sejam eles visuais ou tecnicos , que possao facilitar a coompreensao do codigo ou deixa-lo mais complexo.
+        
+• Qual é a principal diferença entre desenvolver primeiro o código e depois criar os testes e utilizar TDD?
+        O teste ajuda a entender melhor como realmente o codigo deve ser usado , forçando o desenvolvedor pensar na funcionalidade antes da implementaçao. Os testes servem como documentação do que o código deve fazer.

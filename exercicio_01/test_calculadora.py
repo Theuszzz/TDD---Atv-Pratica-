@@ -21,17 +21,17 @@ class TestCalcularDesconto:
         """Desconto de 100%: valor = 80; desconto = 100; resultado esperado = 0"""
         assert calcular_desconto(80, 100) == 0
 
-    def test_valor_negativo_deve_lancar_excecao(self):
+    def test_valor_negativo_excecao(self):
         """Valor negativo deve lançar ValueError"""
         with pytest.raises(ValueError, match="Valor não pode ser negativo"):
             calcular_desconto(-100, 10)
 
-    def test_desconto_superior_100_deve_lancar_excecao(self):
+    def test_desconto_superior_100_excecao(self):
         """Desconto superior a 100% deve lançar ValueError"""
         with pytest.raises(ValueError, match="Desconto não pode ser superior a 100%"):
             calcular_desconto(100, 150)
 
-    def test_desconto_negativo_deve_lancar_excecao(self):
+    def test_desconto_negativo_excecao(self):
         """Desconto negativo deve lançar ValueError"""
         with pytest.raises(ValueError, match="Desconto não pode ser negativo"):
             calcular_desconto(100, -10)

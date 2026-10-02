@@ -25,12 +25,12 @@ class TestClassificarNota:
         """Nota 10 → Aprovado"""
         assert classificar_nota(10) == "Aprovado"
 
-    def test_nota_negativa_deve_lancar_excecao(self):
+    def test_nota_negativa_excecao(self):
         """Nota menor que 0 deve lançar ValueError"""
         with pytest.raises(ValueError, match="Nota inválida"):
             classificar_nota(-1)
 
-    def test_nota_maior_que_10_deve_lancar_excecao(self):
+    def test_nota_maior_que_10_excecao(self):
         """Nota maior que 10 deve lançar ValueError"""
         with pytest.raises(ValueError, match="Nota inválida"):
             classificar_nota(11)

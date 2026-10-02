@@ -1,0 +1,37 @@
+Relatório
+Inclua no ZIP um arquivo relatorio.pdf ou relatorio.txt respondendo às questões abaixo.
+Exercício 1:
+• Qual foi o primeiro teste criado?
+        O primeiro teste trata-se de importar a funçao "calcular_desconto" do arquivo "calculadora.py". Criando uma classe onde os testes serao definidos como "desconto porcento" .
+        
+• Por que ele falhou?
+        Falha caso a funçao importada do arquivo nao ter sido implementada ainda, ou seja, nao tem conteudo ou o arquivo nao existe .
+        
+• Como você fez o teste passar?
+        Definir na funçao o minimo para passar o teste que e retornar o valor do desconto aplicado ao valor final de um produto, parametros de entrada da funçao implementada.
+        
+• O que foi alterado durante a refatoração?
+        Podemos validar os valores das entradas que deve ser positivo ,tanto o valor quanto o desconto, nem superior a 100%.
+        
+Exercício 2:
+• Quais testes foram criados?
+        Testes que comparam o valor de entrada na funçao "classificar_nota" para definir se a nota sera classificada como sujeita a reprovaçao, aprovaçao ou recuperaçao. Ele usara uma nota para verificar se a funçao esta implementada corretamente como "classificar a nota 4 como Reprovado".
+        
+• Qual caso de teste apresentou maior dificuldade?
+        Definir o objeto que retorna a exceçao de uma nota negativa ou maior que 10 com o ".raises" do pytest.
+        
+• Como você tratou notas inválidas?
+        Na refatoraçao foi possivel adicionar uma comparaçao antes do submeta-la ao objetivo final da funçao implementada. Retorna um erro de nota invalida se o valor nao estiver entra 0 e 10.
+        
+Exercício 3:
+• Quais funcionalidades foram implementadas?
+        Adicionar um produto , que deve conter nome, preço e quantidade.
+        Aplicar desconto percentual , valor de 0 a 100.
+        Calcular total , que calcula um subtotal depois aplica o valor do desconto .
+        
+• Quais testes foram criados?
+• Qual foi a principal dificuldade encontrada durante o desenvolvimento?
+Reflexão final:
+• Explique, com suas próprias palavras, o que significa RED → GREEN → REFACTOR.
+• Qual é a principal diferença entre desenvolver primeiro o código e depois criar os testes
+e utilizar TDD?
